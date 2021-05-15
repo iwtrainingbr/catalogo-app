@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Menu from "../Menu";
+import Drawer from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,12 +23,17 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
     const classes = useStyles();
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
+    const toggleMenu = (open) => () => {
+        setMenuOpen(open);
+    }
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <IconButton onClick={toggleMenu(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
@@ -35,6 +42,10 @@ export default function Navbar() {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
+
+            <Drawer anchor={"left"} open={menuOpen} onClose={toggleMenu(false)}>
+                <Menu/>
+            </Drawer>
         </div>
     );
 }

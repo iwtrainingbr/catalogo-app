@@ -5,6 +5,7 @@ import Register from "../../pages/Register";
 import Stores from "../../pages/Stores";
 import StoreDetails from "../../pages/StoreDetails";
 import Counter from "../../pages/Counter";
+import NotFound from "../../pages/NotFound";
 
 export default function Routes () {
     return (
@@ -15,6 +16,8 @@ export default function Routes () {
             <Route exact path={"/lojas"} component={Stores}/>
             <Route exact path={"/lojas/:id"} component={StoreDetails}/>
             <Route exact path={"/contador"} component={Counter}/>
+
+            <Route path={"/*"} component={NotFound}/>
         </Switch>
     );
 }
