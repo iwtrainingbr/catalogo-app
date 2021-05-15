@@ -1,11 +1,12 @@
-import Login from "./pages/Login";
+import {BrowserRouter} from "react-router-dom";
+import Routes from "./config/Routes";
 
 function App() {
   return (
     <div>
-      <h1>Ola mundo</h1>
-
-      <Login/>
+        <BrowserRouter>
+            <Routes/>
+        </BrowserRouter>
     </div>
   );
 }

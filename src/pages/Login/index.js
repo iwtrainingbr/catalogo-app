@@ -1,18 +1,26 @@
+import "./styles.css";
+import {Button, TextField} from "@material-ui/core";
+
 export default function Login() {
-    let nome = 'Alessandro';
-
-    const teste = () => {
-        alert('Click');
-    };
-
     return (
-        <div>
-            <h1>Página de Login</h1>
-            <h2>{nome}</h2>
+        <div style={{marginLeft: '10%', width: '80%'}}>
 
-            <button onClick={teste}>
-                Clique aqui
-            </button>
+            <div style={{marginTop: 100, marginBottom: 100}} align={"center"}>
+                <span>LOGO</span>
+            </div>
+
+            <TextField fullWidth variant={"outlined"} label={"Email"} />
+            <TextField fullWidth variant={"outlined"} label={"Senha"} style={{marginTop: 10, marginBottom: 20}}/>
+
+            <div align={"center"}>
+                <Button variant={"contained"} color={"primary"}>Entrar</Button>
+
+                <br/><br/>
+
+                <Button variant={"text"} color={"primary"} size={"small"}>
+                    Esqueci a senha
+                </Button>
+            </div>
         </div>
     );
 }
