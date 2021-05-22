@@ -8,6 +8,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ExitIcon from "@material-ui/icons/ExitToApp";
 import HomeIcon from "@material-ui/icons/Home";
 import StoreIcon from "@material-ui/icons/Store";
+import LocalOfferIcon from "@material-ui/icons/LocalOffer";
+import PlaceIcon from "@material-ui/icons/Place";
 import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -37,6 +39,16 @@ export default function Menu() {
                 <ListItem button onClick={() => history.push('/lojas')}>
                     <ListItemIcon><StoreIcon/></ListItemIcon>
                     <ListItemText primary={"Lojas"} />
+                </ListItem>
+
+                <ListItem button onClick={() => history.push('/categorias')}>
+                    <ListItemIcon><LocalOfferIcon/></ListItemIcon>
+                    <ListItemText primary={"Categorias"}/>
+                </ListItem>
+
+                <ListItem button onClick={() => history.push('/bairros')}>
+                    <ListItemIcon><PlaceIcon/></ListItemIcon>
+                    <ListItemText primary={"Bairros"}/>
                 </ListItem>
             </List>
             <Divider />

@@ -6,6 +6,8 @@ import Stores from "../../pages/Stores";
 import StoreDetails from "../../pages/StoreDetails";
 import Counter from "../../pages/Counter";
 import NotFound from "../../pages/NotFound";
+import Categories from "../../pages/Categories";
+import Regions from "../../pages/Regions";
 
 export default function Routes () {
     return (
@@ -16,6 +18,8 @@ export default function Routes () {
             <Route exact path={"/lojas"} component={Stores}/>
             <Route exact path={"/lojas/:id"} component={StoreDetails}/>
             <Route exact path={"/contador"} component={Counter}/>
+            <Route exact path={"/categorias"} component={Categories}/>
+            <Route exact path={"/bairros"} component={Regions}/>
 
             <Route path={"/*"} component={NotFound}/>
         </Switch>
