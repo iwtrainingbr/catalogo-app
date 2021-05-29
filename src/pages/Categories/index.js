@@ -9,9 +9,11 @@ import {
     Typography
 } from "@material-ui/core";
 import {API_URL} from "../../config/Server";
+import {useHistory} from "react-router-dom";
 
 export default function Categories() {
     const [categoriesList, setCategoriesList] = React.useState([]);
+    const history = useHistory();
 
     React.useEffect(() => {
         fetch(API_URL+'/categories.json')
@@ -41,7 +43,7 @@ export default function Categories() {
                         return (
                             <Grid item xs={6}>
                                 <Card>
-                                    <CardActionArea>
+                                    <CardActionArea onClick={() => history.push(`/categorias/${category.name}/lojas`)}>
                                         <CardMedia style={{height: 100}} image={category.image}/>
 
                                         <CardContent>

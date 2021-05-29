@@ -8,9 +8,11 @@ import {
     Typography
 } from "@material-ui/core";
 import {API_URL} from "../../config/Server";
+import {useHistory} from "react-router-dom";
 
 export default function Regions() {
     const [regionsList, setRegionsList] = React.useState([]);
+    const history = useHistory();
 
     React.useEffect(() => {
         fetch(API_URL+'/regions.json')
@@ -40,7 +42,7 @@ export default function Regions() {
                         return (
                             <Grid item xs={6}>
                                 <Card>
-                                    <CardActionArea>
+                                    <CardActionArea onClick={() => history.push(`/bairros/${region.name}/lojas`)}>
                                         <CardContent>
                                             <Typography variant={"h5"} component={"h5"}>
                                                 {region.name}

@@ -20,6 +20,8 @@ export default function Routes () {
             <Route exact path={"/contador"} component={Counter}/>
             <Route exact path={"/categorias"} component={Categories}/>
             <Route exact path={"/bairros"} component={Regions}/>
+            <Route exact path={"/categorias/:category/lojas"} component={Stores}/>
+            <Route exact path={"/bairros/:region/lojas"} component={Stores}/>
 
             <Route path={"/*"} component={NotFound}/>
         </Switch>
