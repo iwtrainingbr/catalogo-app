@@ -9,7 +9,7 @@ export default function Login() {
         <div style={{marginLeft: '10%', width: '80%'}}>
 
             <div style={{marginTop: 100, marginBottom: 100}} align={"center"}>
-                img
+                <img width={"80%"} src={"/img/catalogo-digital-white.png"}/>
             </div>
 
             <TextField fullWidth variant={"outlined"} label={"Email"} />

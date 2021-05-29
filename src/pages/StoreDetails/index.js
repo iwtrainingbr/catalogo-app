@@ -72,17 +72,17 @@ Olá, *${data.name}*, gostaria de mais informações a respeito desse estabeleci
                         <Divider style={{margin: 10}}/>
 
                         <List component={"nav"}>
-                            <ListItem button>
+                            <ListItem button onClick={() => window.location.href = 'https://maps.google.com?q='+data.address}>
                                 <ListItemIcon><MapIcon/></ListItemIcon>
                                 <ListItemText primary={data.address}/>
                             </ListItem>
 
-                            <ListItem button>
+                            <ListItem button onClick={() => window.location.href = 'mailto:'+data.email}>
                                 <ListItemIcon><EmailIcon/></ListItemIcon>
                                 <ListItemText primary={data.email}/>
                             </ListItem>
 
-                            <ListItem button>
+                            <ListItem button onClick={() => window.location.href = 'tel:'+data.phone}>
                                 <ListItemIcon><PhoneIcon/></ListItemIcon>
                                 <ListItemText primary={data.phone}/>
                             </ListItem>
