@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import {Card, CardContent, CardActionArea, CardMedia, Typography, Chip, Divider} from "@material-ui/core";
 import {useHistory} from "react-router-dom";
+import {API_URL} from "../../config/Server";
 
 export default function Stores() {
     const [storeList, setStoreList] = React.useState([]);
     const history = useHistory();
 
     React.useEffect(() => {
-        fetch('https://frontend-06-2021-default-rtdb.firebaseio.com/stores.json')
+        fetch(API_URL+'/stores.json')
             .then(response => response.json())
             .then(response => {
                 let data = [];
