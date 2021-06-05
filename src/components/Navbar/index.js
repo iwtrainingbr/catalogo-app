@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton onClick={toggleMenu(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <IconButton data-cy={"menu"} onClick={toggleMenu(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>

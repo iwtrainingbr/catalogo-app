@@ -36,7 +36,7 @@ export default function Menu() {
                     <ListItemText primary={"Página Inicial"} />
                 </ListItem>
 
-                <ListItem button onClick={() => history.push('/lojas')}>
+                <ListItem data-cy={"stores"} button onClick={() => history.push('/lojas')}>
                     <ListItemIcon><StoreIcon/></ListItemIcon>
                     <ListItemText primary={"Lojas"} />
                 </ListItem>
@@ -53,7 +53,7 @@ export default function Menu() {
             </List>
             <Divider />
             <List>
-                <ListItem button onClick={() => history.push('/login')}>
+                <ListItem data-cy={"logout"} button onClick={() => history.push('/login')}>
                     <ListItemIcon><ExitIcon/></ListItemIcon>
                     <ListItemText primary={"Sair"} />
                 </ListItem>

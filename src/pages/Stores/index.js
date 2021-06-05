@@ -84,9 +84,9 @@ export default function Stores(props) {
                     }}
                 />
 
-                {filteredStoreList.map(store => {
+                {filteredStoreList.map((store, index) => {
                     return (
-                        <Card style={{marginBottom: 20}}>
+                        <Card key={"store-"+store.id} style={{marginBottom: 20}} id={"store-details-".index}>
                             <CardActionArea onClick={() => history.push('/lojas/'+store.id)}>
                                 <CardMedia style={{height: 200}} image={store.image} title={"Titulo da Loja"}/>
                                 <CardContent>

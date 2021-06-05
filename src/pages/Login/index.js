@@ -8,15 +8,16 @@ export default function Login() {
     return (
         <div style={{marginLeft: '10%', width: '80%'}}>
 
-            <div style={{marginTop: 100, marginBottom: 100}} align={"center"}>
+            <div style={{marginTop: 100, marginBottom: 70}} align={"center"}>
                 <img width={"80%"} src={"/img/catalogo-digital-white.png"}/>
             </div>
 
-            <TextField fullWidth variant={"outlined"} label={"Email"} />
-            <TextField fullWidth variant={"outlined"} label={"Senha"} style={{marginTop: 10, marginBottom: 20}}/>
+            <h2>Login</h2>
+            <TextField data-cy={"email"} fullWidth variant={"outlined"} label={"Email"} />
+            <TextField data-cy={"senha"} type={"password"} fullWidth variant={"outlined"} label={"Senha"} style={{marginTop: 10, marginBottom: 20}}/>
 
             <div align={"center"}>
-                <Button onClick={() => history.push('/')} variant={"contained"} color={"primary"}>Entrar</Button>
+                <Button data-cy={"submit"} onClick={() => history.push('/')} variant={"contained"} color={"primary"}>Entrar</Button>
 
                 <br/><br/>
 

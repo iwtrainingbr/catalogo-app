@@ -1,0 +1,85 @@
+{
+  "categories" : {
+    "-MYWB9O9n28u_Orn_jTg" : {
+      "description" : "Roupas de vestir.",
+      "image" : "https://super.abril.com.br/wp-content/uploads/2017/01/roupas.jpg",
+      "name" : "Vestuario "
+    },
+    "-MZ3yBomb8I_yfSURy-0" : {
+      "description" : "Onde um pneu é um pneu.",
+      "image" : "https://novonegocio.com.br/wp-content/uploads/2019/08/borracharia.jpg",
+      "name" : "Borracharia"
+    },
+    "-M_lUhuXXB4AT9GyaCke" : {
+      "description" : "Produtos Sensuais com até 40% Off à Vista ou em Até 3x Sem Juros, Entrega ágil e discreta.",
+      "image" : "https://cursosbig.com.br/wp-content/uploads/2019/02/SEXSHOP-EM-NITEROI-500x492.jpg.webp",
+      "name" : "Sexshop"
+    }
+  },
+  "regions" : {
+    "-MYW6BXInKejY1YfqqpX" : {
+      "description" : "Cidade do povo trabalhador",
+      "name" : "Cidade dos Funcionarios"
+    },
+    "-MYW6LpTeMF6SJmd1hTr" : {
+      "description" : "Ble ble gle",
+      "name" : "Jangurussu"
+    },
+    "-MYW6eW5rIpqmurWpmCP" : {
+      "apelido" : "teste",
+      "description" : "Miss jane",
+      "name" : "Messejana"
+    },
+    "-M_lVMPzHoHs3Z7-rnJe" : {
+      "description" : "Sem comentários.",
+      "name" : "Pirambu"
+    }
+  },
+  "stores" : {
+    "-M_lI9pCfeOMvAdi_HIZ" : {
+      "address" : "Rua A, 51 - Bla bla bla",
+      "category" : "Borracharia",
+      "email" : "borracharia@email.com",
+      "image" : "http://s2.glbimg.com/PJxUcu8sxAi3YGN8gxXF5FNLoCs=/e.glbimg.com/og/ed/f/original/2017/11/29/decoracao.jpg",
+      "name" : "Borracharia Bla bla bla",
+      "phone" : "85986740502",
+      "region" : "Cidade dos Funcionarios"
+    },
+    "-M_lIMj3xKQhMfynq9bf" : {
+      "address" : "Rua XXX, YYY, ZZZ",
+      "category" : "Borracharia",
+      "email" : "borracharia2@email.com",
+      "image" : "https://listaja.com.br/imagens_usuarios/c33dedeb28a5b4cff2ff3b0c5d18b4f3.jpg",
+      "name" : "Borracharia Ble ble ble",
+      "phone" : "123123123",
+      "region" : "Cidade dos Funcionarios"
+    },
+    "-M_lWkAsRJjEdBvNnikG" : {
+      "address" : "Rua Carolino de Aquino, 445 - Benfica",
+      "category" : "Borracharia",
+      "email" : "teste@teste.com",
+      "image" : "https://storage.alboom.ninja/sites/4831/albuns/673366/img_7036.jpg?t=1594329997",
+      "name" : "Borracharia O Criança",
+      "phone" : "85985695536",
+      "region" : "Pirambu"
+    },
+    "-MaOHg_OQlF8dEnefrbM" : {
+      "address" : "Rua Carolino de Aquino, 445- Fatima",
+      "category" : "Vestuario",
+      "email" : "iw@email.com",
+      "image" : "https://images.sympla.com.br/5e668720d329e.jpg",
+      "name" : "Iwtraining",
+      "phone" : "85997734817",
+      "region" : "Messejana"
+    },
+    "-MbOD_vpjIwWk73hV4Bn" : {
+      "address" : "Rua Marcos Macedo, 827  - Aldeota - Fortaleza-CE",
+      "category" : "Vestuario",
+      "email" : "elabore@email.com",
+      "image" : "https://fastly.4sqi.net/img/general/558x200/7622017_ptuc0GKycngXGXxVNWH04IpaUX0Dk39KosfCOfFWevE.jpg",
+      "name" : "Elabore Colab Store",
+      "phone" : "85985388538",
+      "region" : "Cidade dos Funcionarios"
+    }
+  }
+}

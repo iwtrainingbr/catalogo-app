@@ -38,7 +38,7 @@ export default function Home() {
                 <h1>Página Inicial</h1>
 
                 <Card style={{marginTop: 20}}>
-                    <CardActionArea onClick={() => history.push('/lojas')}>
+                    <CardActionArea data-cy={"dashboard-stores"} onClick={() => history.push('/lojas')}>
                         <CardContent>
                             <Grid container>
                                 <Grid item xs={8}>
